@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>基于angularjs+gulp构建SPA</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -24,10 +24,47 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-                <section>Single Horizontal Slide</section>
+                <section><span>基于angularjs+gulp构建SPA</span></section>
+                <section><span>SPA？</span></section>
+                <section><span>SPA（Single Page Application）</span></section>
                 <section>
-                    <section>Vertical Slide 1</section>
-                    <section>Vertical Slide 2</section>
+                    <div><h2>优点</h2></div>
+                    <div>
+                        <ol>
+                            <li class="fragment">
+                                <p>前后端职责分离，架构清晰</p>
+                                <p>前端进行交互逻辑，后端负责数据处理,各自单独开发测试</p>
+                            </li>
+                            <li class="fragment">
+                                <p>良好的交互体验</p>
+                                <p>前端进行的是局部渲染。避免不必要的跳转和重复渲染</p>
+                            </li>
+                            <li class="fragment">
+                                <p>减轻服务器压力，吞吐能力提高几倍</p>
+                            </li>
+                            <li class="fragment">
+                                <p>共用一套后端程序代码</p>
+                                <p>可以同时用于Web界面、手机、平板等多种客户端</p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section>
+                    <div><h2>缺点</h2></div>
+                    <div>
+                        <ol>
+                            <li class="fragment">
+                                <p>SEO难度较高</p>
+                                <p>由于所有的内容都在一个页面中动态替换显示，需要做一些静态页面给搜索引擎用</p>
+                            </li>
+                            <li class="fragment">
+                                <p>实现路由，否则不能使用浏览器的前进后退功能</p>
+                            </li>
+                            <li class="fragment">
+                                <p>初次加载耗时多</p>
+                            </li>
+                        </ol>
+                    </div>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
