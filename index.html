@@ -20,13 +20,18 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+        <style>
+            .reveal h2 {
+                text-transform:none;
+            }
+        </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-                <section><span>基于angularjs+gulp构建SPA</span></section>
-                <section><span>SPA？</span></section>
-                <section><span>SPA（Single Page Application）</span></section>
+                <section><h2>基于AngularJS+Gulp构建SPA</h2></section>
+                <section><h2>SPA？</h2></section>
+                <section><h2>SPA（Single Page Application）</h2></section>
                 <section>
                     <div><h2>优点</h2></div>
                     <div>
@@ -67,7 +72,7 @@
                     </div>
                 </section>
                 <section>
-                    <div><h2><a href="https://angularjs.org/" target="_blank">angularjs</a></h2></div>
+                    <div><h2><a href="https://angularjs.org/" target="_blank">AngularJS</a></h2></div>
                     <section>
                         <p>WEB应用中的一种客户端的解决方案</p>
                         <p>AngularJS主要考虑的是构建CRUD应用</p>
@@ -98,15 +103,66 @@
                         <img data-src="img/angular.png">
                     </section>
                 </section>
+                <section>
+                    <div><h2><a href="http://www.gulpjs.com.cn/" target="_blank">Gulp</a></h2></div>
+                    <p>gulpjs是一个前端构建工具，其API非常简单，且易于学习，它利用 Node.js 流的威力，可以快速构建项目并减少频繁的 IO 操作。</p>
+                </section>
                 <!--<section data-background-color="#e9e9e9">
                     <h2>Color</h2>
                 </section>-->
                 <section data-transition="zoom">
-                    <h2>This slide will override the presentation transition and zoom!</h2>
+                    <h2>前后端分离</h2>
+                    <section>
+                        <img data-src="img/divide-work.jpg">
+                    </section>
+                    <section>
+                        <img data-src="img/workflow.jpg">
+                    </section>
                 </section>
 
                 <section data-transition-speed="fast">
-                    <h2>Choose from three transition speeds: default, fast or slow!</h2>
+                    <div><h2>本地开发</h2></div>
+                    <section>
+                        <div>本地服务及mock数据</div>
+                        <ol>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/gulp-connect" target="_blank">gulp-concat(实现一个本地服务)</a></li>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/connect-rest">connect-rest(让楼上支持 get/post/put/delete)</a></li>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/opn">opn（打开一个地址）</a></li>
+                            <li class="fragment fade-up">mock</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <img src="img/mock.png">
+                    </section>
+                    <section>
+                        <p>模块化开发</p>
+                        <img src="img/box.png">
+                    </section>
+                    <section>
+                        <p>js</p>
+                        <img src="img/browerify.png">
+                    </section>
+                    <section>
+                        <p>css</p>
+                        <img src="img/less.png">
+                    </section>
+                    <section>
+                        <ol>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/browserify" target="_blank">browerify模块依赖管理</a></li>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/gulp-less">gulp-less</a></li>
+                        </ol>
+                    </section>
+                    <section>
+                        <p>外接字体及自定义字体</p>
+                        <ol>
+                            <li class="fragment fade-up"><a href="http://fontawesome.io/" target="_blank">FontAwesome</a></li>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/gulp-iconfont" target="_blank">gulp-iconfont</a></li>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/gulp-iconfont-css" target="_blank">gulp-iconfont-css</a></li>
+                        </ol>
+                    </section>
+                    <section>
+                        watch任务
+                    </section>
                 </section>
 			</div>
 		</div>
