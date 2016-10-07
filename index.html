@@ -126,8 +126,8 @@
                         <div>本地服务及mock数据</div>
                         <ol>
                             <li class="fragment fade-up"><a href="https://www.npmjs.com/package/gulp-connect" target="_blank">gulp-concat(实现一个本地服务)</a></li>
-                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/connect-rest">connect-rest(让楼上支持 get/post/put/delete)</a></li>
-                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/opn">opn（打开一个地址）</a></li>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/connect-rest" target="_blank">connect-rest(让楼上支持 get/post/put/delete)</a></li>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/opn" target="_blank">opn（打开一个地址）</a></li>
                             <li class="fragment fade-up">mock</li>
                         </ol>
                     </section>
@@ -135,38 +135,60 @@
                         <img src="img/mock.png">
                     </section>
                     <section>
-                        <p>模块化开发</p>
+                        <p>模块化系统</p>
                         <img src="img/box.png">
                     </section>
                     <section>
                         <p>js</p>
-                        <img src="img/browerify.png">
+                        <a href="https://www.npmjs.com/package/browserify" target="_blank"><img src="img/browerify.png"></a>
                     </section>
                     <section>
-                        <p>css</p>
-                        <img src="img/less.png">
+                        <ul>
+                            <li>
+                                <p>公共文件打包成一个文件并压缩</p>
+                            </li>
+                            <li>
+                                <p>业务模块文件打包成一个文件</p>
+                            </li>
+                        </ul>
                     </section>
                     <section>
-                        <ol>
-                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/browserify" target="_blank">browerify模块依赖管理</a></li>
+                        <ul>
+                            <li class="fragment fade-up">
+                                <p>css</p>
+                                <a href="http://www.bootcss.com/p/lesscss/" target="_blank"><img src="img/less.png"></a>
+                            </li>
+                            <li class="fragment fade-up">
+                                <p>提供一个入口文件导入所有的less文件</p>
+                            </li>
                             <li class="fragment fade-up"><a href="https://www.npmjs.com/package/gulp-less">gulp-less</a></li>
-                        </ol>
+                        </ul>
                     </section>
                     <section>
-                        <p>外接字体及自定义字体</p>
+                        <p>字体</p>
                         <ol>
                             <li class="fragment fade-up">通过自定义字体来实现icon的可定制性很高，我们可以随意的定义颜色、大小、透明度</li>
-                            <li class="fragment fade-up">浏览器兼容性</li>
+                            <li class="fragment fade-up">能够更好的兼容浏览器</li>
                             <li class="fragment fade-up">加载一个字体文件就可以加载所有icon，这样也可以减轻服务端的压力</li>
-                        </ol>
-                        <ul>
                             <li class="fragment fade-up"><a href="http://fontawesome.io/" target="_blank">FontAwesome</a></li>
+                        </ol>
+                    </section>
+                    <section>
+                        <p>生成自定义字体</p>
+                        <ul>
+                            <li class="fragment fade-up">提供svg格式的图片</li>
                             <li class="fragment fade-up"><a href="https://www.npmjs.com/package/gulp-iconfont" target="_blank">gulp-iconfont</a></li>
                             <li class="fragment fade-up"><a href="https://www.npmjs.com/package/gulp-iconfont-css" target="_blank">gulp-iconfont-css</a></li>
                         </ul>
                     </section>
                     <section>
-                        watch任务
+                        <p>监听任务，刷新页面</p>
+                        <ul>
+                            <li>html</li>
+                            <li>js</li>
+                            <li>less</li>
+                            <li>font</li>
+                        </ul>
                     </section>
                 </section>
 			</div>
