@@ -195,7 +195,7 @@
                             <li>html</li>
                             <li>js</li>
                             <li>less</li>
-                            <li>font</li>
+                            <li>svg</li>
                             <li class="fragment fade-up">
                                 <p>gulp-connect提供让页面刷新的api：reload（）</p>
                             </li>
@@ -224,11 +224,59 @@
                     </section>
                     <section>
                         <p><a href="http://www.infoq.com/cn/articles/nodejs-module-mechanism/" target="_blank">编写nodejs模块管理gulp任务</a></p>
-                        <img src="img/nodeModel.png">
+                        <div><img src="img/nodeModel.png"></div>
+                        <ul>
+                            <li class="fragment fade-up"><a href="https://www.npmjs.com/package/require-dir" target="_blank">require-dir</a></li>
+                        </ul>
                     </section>
                 </section>
                 <section data-transition="zoom">
-                    <div><h2>打包</h2></div>
+                    <div><h2>打包部署</h2></div>
+                </section>
+                <section data-transition-speed="fast">
+                    <p>源码转换</p>
+                    <section>
+                        <p>js</p>
+                        <ul>
+                            <li>browserify</li>
+                            <li><a href="https://www.npmjs.com/package/gulp-uglify" target="_blank">gulp-uglify</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>css</p>
+                        <ul>
+                            <li><a href="https://www.npmjs.com/package/gulp-cssmin" target="_blank">gulp-cssmin</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>image</p>
+                        <ul>
+                            <li><a href="https://www.npmjs.com/package/gulp-imagemin" target="_blank">gulp-imagemin</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>html</p>
+                        <ul>
+                            <li>替换脚本：<a href="https://www.npmjs.com/package/gulp-html-replace" target="_blank">gulp-html-replace</a></li>
+                            <li><a href="https://www.npmjs.com/package/gulp-htmlmin" target="_blank">gulp-htmlmin</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>其他处理</p>
+                        <ul>
+                            <li class="fragment fade-up">哈希处理：<a href="https://www.npmjs.com/package/gulp-rev" target="_blank">gulp-rev</a></li>
+                            <li class="fragment fade-up">哈希清单替换：<a href="https://www.npmjs.com/package/gulp-rev-replace" target="_blank">gulp-rev-replace</a></li>
+                            <li class="fragment fade-up">字体文件拷贝到目标目录</li>
+                            <li class="fragment fade-up">更新文件资源的引用路径</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <p>源码转换后调试问题</p>
+                    <ul>
+                        <li class="fragment fade-up"><a href="http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html" target="_blank">sourcemaps</a></li>
+                        <li class="fragment fade-up"><a href="https://www.npmjs.com/package/gulp-sourcemaps" target="_blank">gulp-sourcemaps</a></li>
+                    </ul>
                 </section>
 			</div>
 		</div>
